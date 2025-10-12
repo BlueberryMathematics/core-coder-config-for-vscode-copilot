@@ -65,7 +65,8 @@ Let's try something: use the terminal to list all files in project, then read
 through any you haven't explored enough. We'll regroup and resolve the issue.
 ```
 
-###⚡ 6. Project File Listing (PowerShell)⚡
+### 6. Project File Listing (PowerShell)
+⚡⚡⚡⚡⚡
 ```
 Use the following command to read the file names of the project via terminal:
 
@@ -78,6 +79,7 @@ $_.FullName -notlike "*\.venv\*" } |
 Select-Object Name, @{Name="RelativePath"; Expression={$_.FullName.Replace("$PWD\", "")}} | 
 Sort-Object RelativePath
 ```
+⚡⚡⚡⚡⚡
 
 ### 7. Test Organization
 ```
