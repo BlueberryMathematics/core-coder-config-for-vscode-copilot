@@ -6,7 +6,7 @@ What tool are these prompts for?
 
 [Vscode Copilot](https://code.visualstudio.com/docs/copilot/setup)
 
-Advanced users may like to know that you can create your own vscode copilot extensions:
+Advanced users might want to know that you can create your own vscode copilot extensions:
 
 [Vscode copilot extension docs](https://code.visualstudio.com/api/extension-guides/ai/chat-tutorial)
 
