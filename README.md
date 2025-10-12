@@ -132,7 +132,7 @@ the venv is activated when installing packages
 
 ## 💡 Best Practices
 
-- **Create Empyty Folders** when setting up the project
+- **Create Empty Folders** when setting up the project
 - **Keep Files Organzied** as it likes to put stuff in the wrong place sometimes
 - **Always verify paths** before file operations
 - **Use terminal commands** to investigate issues thoroughly
