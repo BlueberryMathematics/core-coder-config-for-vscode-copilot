@@ -105,6 +105,11 @@ Please move all documentation to the docs folder, remove redundant README files,
 and finalize the remaining documentation.
 ```
 
+### 9. Iterative Teaching
+```
+You dont need to do it all in one shot, I will prompt you again, so just get started on the setup and when you are ready to take a break take one and then we will continue. If you get to a point and are unsure about what to do, just ask me some questions and I will tell you what I want you to do. 
+```
+
 ---
 
 ## 🚀 Getting Started
