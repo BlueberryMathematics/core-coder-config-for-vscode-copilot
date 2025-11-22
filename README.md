@@ -119,6 +119,10 @@ making things better, faster, and more well orgnazied, i want less code, less co
 there is the faster you can check it all over
 ```
 
+### 12. Final Check
+```
+Now please read everything slowly, part by part, does it all make sense?
+```
 ---
 
 ## 🚀 Getting Started
