@@ -126,9 +126,9 @@ Now please read everything slowly, part by part, does it all make sense?
 
 ### 13. Better Docs
 
-'''
+```
 Yes but first can you put all the new enhancment docs in a folder and the otheer docs in folders and look in the terminal at the dirs and just organize the docs.
-'''
+```
 
 ---
 
