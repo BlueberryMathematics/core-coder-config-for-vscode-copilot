@@ -111,7 +111,6 @@ Get-ChildItem -Recurse -File |
     Out-Host
 
 ```
-⚡⚡⚡⚡⚡
 
 ### 7. Test Organization
 ```
