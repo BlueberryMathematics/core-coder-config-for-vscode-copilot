@@ -77,11 +77,39 @@ Let's try something: use the terminal to list all files in project, then read
 through any you haven't explored enough. We'll regroup and resolve the issue.
 ```
 
-### 6. Project File Listing (PowerShell)
-⚡⚡⚡⚡⚡
-Use the following command to read the file names of the project via terminal:
+### 6. ⚡ Project File Listing ⚡ (PowerShell)
+
+The following command lists all files in the current directory, filters out Python‑environment noise, converts each file to a relative path, and sorts them.
+
+🧹 Option A — Remove the limit entirely
 ```
-Get-ChildItem -Recurse -File | Where-Object { $_.FullName -notlike "*\.venv\*" -and $_.FullName -notlike "*__pycache__*" -and $_.Extension -ne ".pyc" } | Select-Object @{Name="RelativePath"; Expression={$_.FullName.Replace("$PWD\", "")}} | Sort-Object RelativePath | Select-Object -First 50
+Get-ChildItem -Recurse -File |
+    Where-Object { $_.FullName -notlike "*\.venv\*" -and $_.FullName -notlike "*__pycache__*" -and $_.Extension -ne ".pyc" } |
+    Select-Object @{Name="RelativePath"; Expression={$_.FullName.Replace("$PWD\", "")}} |
+    Sort-Object RelativePath
+```
+
+📏 Option B — Make the limit configurable
+If you still want a cap sometimes:
+```
+$limit = 200   # or $null for unlimited
+
+Get-ChildItem -Recurse -File |
+    Where-Object { $_.FullName -notlike "*\.venv\*" -and $_.FullName -notlike "*__pycache__*" -and $_.Extension -ne ".pyc" } |
+    Select-Object @{Name="RelativePath"; Expression={$_.FullName.Replace("$PWD\", "")}} |
+    Sort-Object RelativePath |
+    Select-Object -First $limit
+```
+
+🧠 Option C — Paginate (nice for huge repos
+If you want to scroll in chunks:
+```
+Get-ChildItem -Recurse -File |
+    Where-Object { $_.FullName -notlike "*\.venv\*" -and $_.FullName -notlike "*__pycache__*" -and $_.Extension -ne ".pyc" } |
+    Select-Object @{Name="RelativePath"; Expression={$_.FullName.Replace("$PWD\", "")}} |
+    Sort-Object RelativePath |
+    Out-Host
+
 ```
 ⚡⚡⚡⚡⚡
 
