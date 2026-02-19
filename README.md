@@ -175,6 +175,12 @@ please document and comment the code around there more so that this confusion do
 please explore the codebase and recommend the best options for how to do __________ and think through the benefits of each options, and feel free to explore the code to understand better.
 ```
 
+### 16. Ultra Instict Mode ***NEW***
+One time I put him in this awesome mode where he was super easy to use using 2 speperate prompts:
+```
+stop talking like i would have known that, you just write one giant paragraph and then i read it, its jarring, the only time it stops is when you cant make a choice then i make it for you or i steer you, think about me a little more, like why would you say "Already pushed!" you literally just pushed what you just wrote and i didnt even ask you to push it
+```
+
 ## 🚀 Getting Started
 
 1. **Initialize CoreCoder**: Copy the System Prompt into your VSCode Copilot agent mode
